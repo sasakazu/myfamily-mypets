@@ -16,6 +16,8 @@
 		73813C4E20CBE5B500F21111 /* 写真のフリーアイコン5.png in Resources */ = {isa = PBXBuildFile; fileRef = 73813C4C20CBE5B400F21111 /* 写真のフリーアイコン5.png */; };
 		73813C5220CBE89000F21111 /* ゴールデンレトリバーのピクト2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73813C5020CBE89000F21111 /* ゴールデンレトリバーのピクト2.png */; };
 		73813C5320CBE89000F21111 /* ファミリーのアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 73813C5120CBE89000F21111 /* ファミリーのアイコン.png */; };
+		73813D4D20CFD06B00F21111 /* petCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73813D4C20CFD06B00F21111 /* petCamera.swift */; };
+		73813D5220CFD6BA00F21111 /* petImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73813D5120CFD6BA00F21111 /* petImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		73813C4C20CBE5B400F21111 /* 写真のフリーアイコン5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "写真のフリーアイコン5.png"; sourceTree = "<group>"; };
 		73813C5020CBE89000F21111 /* ゴールデンレトリバーのピクト2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ゴールデンレトリバーのピクト2.png"; sourceTree = "<group>"; };
 		73813C5120CBE89000F21111 /* ファミリーのアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ファミリーのアイコン.png"; sourceTree = "<group>"; };
+		73813D4C20CFD06B00F21111 /* petCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petCamera.swift; sourceTree = "<group>"; };
+		73813D5120CFD6BA00F21111 /* petImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				73813C3920CBE37200F21111 /* AppDelegate.swift */,
 				73813C3B20CBE37200F21111 /* ViewController.swift */,
 				73813C3D20CBE37200F21111 /* Main.storyboard */,
+				73813D5020CFD19700F21111 /* pets */,
 				73813C4F20CBE87F00F21111 /* images */,
 				73813C4020CBE37300F21111 /* Assets.xcassets */,
 				73813C4220CBE37300F21111 /* LaunchScreen.storyboard */,
@@ -82,6 +87,15 @@
 				73813C5120CBE89000F21111 /* ファミリーのアイコン.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		73813D5020CFD19700F21111 /* pets */ = {
+			isa = PBXGroup;
+			children = (
+				73813D5120CFD6BA00F21111 /* petImage.swift */,
+				73813D4C20CFD06B00F21111 /* petCamera.swift */,
+			);
+			path = pets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73813D4D20CFD06B00F21111 /* petCamera.swift in Sources */,
+				73813D5220CFD6BA00F21111 /* petImage.swift in Sources */,
 				73813C3C20CBE37200F21111 /* ViewController.swift in Sources */,
 				73813C3A20CBE37200F21111 /* AppDelegate.swift in Sources */,
 			);
