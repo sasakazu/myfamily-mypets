@@ -47,7 +47,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="178" height="181"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZu-ge-fHU">
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZu-ge-fHU">
                                             <rect key="frame" x="0.0" y="0.0" width="178" height="181"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -305,6 +305,7 @@
         <image name="写真のフリーアイコン5.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="d16-7h-aoc"/>
         <segue reference="Y1B-5I-Au3"/>
     </inferredMetricsTieBreakers>
 </document>

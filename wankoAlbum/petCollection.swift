@@ -8,12 +8,15 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+//private let reuseIdentifier = "Cell"
 
 class petCollection: UICollectionViewController {
     
     
+    // サムネイル画像の名前
+    let photos = [ "download" ]
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,7 @@ class petCollection: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -45,21 +48,33 @@ class petCollection: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return photos.count
+        
+        
     }
 
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-        // Configure the cell
-    
-        return cell
+        // "Cell" はストーリーボードで設定したセルのID
+        let testCell:UICollectionViewCell =
+            collectionView.dequeueReusableCell(withReuseIdentifier: "petCell",
+                                               for: indexPath)
+        
+        // Tag番号を使ってImageViewのインスタンス生成
+        let imageView = testCell.contentView.viewWithTag(1) as! UIImageView
+        // 画像配列の番号で指定された要素の名前の画像をUIImageとする
+        let cellImage = UIImage(named: photos[indexPath.row])
+        // UIImageをUIImageViewのimageとして設定
+        imageView.image = cellImage
+        
+        return testCell
     }
 
     // MARK: UICollectionViewDelegate
