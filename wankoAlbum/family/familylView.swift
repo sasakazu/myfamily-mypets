@@ -1,5 +1,5 @@
 //
-//  petCollection.swift
+//  familylView.swift
 //  wankoAlbum
 //
 //  Created by 笹倉 一也 on 2018/06/14.
@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import AVFoundation
+import Photos
 
 
-class petCollection: UICollectionViewController {
+private let reuseIdentifier = "Cell"
+
+class familylView: UICollectionViewController {
+    
+    
+    
     
 
-  var photoImages = [UIImage?]()
-    
-  
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
+
+        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,40 +33,50 @@ class petCollection: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+    }
+    */
 
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return photoImages.count
-        
+        return 0
     }
 
-    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-        // "Cell" はストーリーボードで設定したセルのID
-        let testCell:UICollectionViewCell =
-            collectionView.dequeueReusableCell(withReuseIdentifier: "petCell",
-                                               for: indexPath)
+        // Configure the cell
+    
+        return cell
+    }
+    
+    
+    
+    @IBAction func familyCamera(_ sender: Any) {
         
-        // Tag番号を使ってImageViewのインスタンス生成
-        let imageView = testCell.contentView.viewWithTag(1) as! UIImageView
-
-        
-        imageView.image = photoImages[indexPath.row]
-        
-        
-        return testCell
+    }
+    
+    
+    @IBAction func familyAlbum(_ sender: Any) {
         
         
     }
+    
+    
 
     // MARK: UICollectionViewDelegate
 

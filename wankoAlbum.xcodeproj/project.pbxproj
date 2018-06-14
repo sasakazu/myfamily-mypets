@@ -19,6 +19,7 @@
 		73813D4D20CFD06B00F21111 /* petCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73813D4C20CFD06B00F21111 /* petCamera.swift */; };
 		73813DD420D21AE000F21111 /* petCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73813DD320D21AE000F21111 /* petCollection.swift */; };
 		73813DD620D257A700F21111 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73813DD520D257A700F21111 /* download.jpg */; };
+		73813DDB20D27B3B00F21111 /* familyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73813DDA20D27B3B00F21111 /* familyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		73813D4C20CFD06B00F21111 /* petCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petCamera.swift; sourceTree = "<group>"; };
 		73813DD320D21AE000F21111 /* petCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = petCollection.swift; path = ../petCollection.swift; sourceTree = "<group>"; };
 		73813DD520D257A700F21111 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
+		73813DDA20D27B3B00F21111 /* familyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = familyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				73813C3920CBE37200F21111 /* AppDelegate.swift */,
 				73813C3B20CBE37200F21111 /* ViewController.swift */,
 				73813C3D20CBE37200F21111 /* Main.storyboard */,
+				73813DD720D2765600F21111 /* family */,
 				73813D5020CFD19700F21111 /* pets */,
 				73813C4F20CBE87F00F21111 /* images */,
 				73813C4020CBE37300F21111 /* Assets.xcassets */,
@@ -99,6 +102,14 @@
 				73813D4C20CFD06B00F21111 /* petCamera.swift */,
 			);
 			path = pets;
+			sourceTree = "<group>";
+		};
+		73813DD720D2765600F21111 /* family */ = {
+			isa = PBXGroup;
+			children = (
+				73813DDA20D27B3B00F21111 /* familyView.swift */,
+			);
+			path = family;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73813DDB20D27B3B00F21111 /* familyView.swift in Sources */,
 				73813DD420D21AE000F21111 /* petCollection.swift in Sources */,
 				73813D4D20CFD06B00F21111 /* petCamera.swift in Sources */,
 				73813C3C20CBE37200F21111 /* ViewController.swift in Sources */,

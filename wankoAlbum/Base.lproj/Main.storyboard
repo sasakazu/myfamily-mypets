@@ -72,53 +72,6 @@
             </objects>
             <point key="canvasLocation" x="1279" y="132"/>
         </scene>
-        <!--my Family-->
-        <scene sceneID="w2H-C6-umJ">
-            <objects>
-                <collectionViewController id="koH-8u-urY" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="zMg-8W-kSy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WvW-XE-raF">
-                            <size key="itemSize" width="159" height="160"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="familyCell" id="1pb-vG-Ngx">
-                                <rect key="frame" x="0.0" y="0.0" width="159" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="159" height="160"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vMG-N8-TkG">
-                                            <rect key="frame" x="0.0" y="0.0" width="159" height="160"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="koH-8u-urY" id="ezU-Fc-e1U"/>
-                            <outlet property="delegate" destination="koH-8u-urY" id="o4q-Lc-reV"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="my Family" id="1Et-tV-0Ce">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="bHH-Ld-QS1">
-                            <connections>
-                                <segue destination="hLK-ch-Ng1" kind="show" id="d16-7h-aoc"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OlV-BG-dB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1277.5999999999999" y="804.64767616191909"/>
-        </scene>
         <!--ペットの写真を撮る-->
         <scene sceneID="MFf-05-La5">
             <objects>
@@ -154,7 +107,7 @@
                                 <state key="normal" title="保存"/>
                                 <connections>
                                     <action selector="petSavedTapped:" destination="YyA-6e-mkl" eventType="touchUpInside" id="6eO-q5-eob"/>
-                                    <segue destination="LsR-v2-KTU" kind="show" identifier="next" id="KVY-zz-p5I"/>
+                                    <segue destination="4HS-d5-HOK" kind="show" identifier="next" id="tw3-bO-OE3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -168,31 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5C4-Xc-dWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2304.8000000000002" y="131.78410794602701"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="asx-EL-axN">
-            <objects>
-                <viewController id="LsR-v2-KTU" customClass="ViewController" customModule="wankoAlbum" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yc6-uM-R4t">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lpH-3z-emZ">
-                                <rect key="frame" x="16" y="100" width="343" height="454"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="UhD-uw-QII"/>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="lpH-3z-emZ" id="Ev1-TO-vbG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1TR-bJ-W0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3158" y="132"/>
+            <point key="canvasLocation" x="2178" y="132"/>
         </scene>
         <!--Pet-->
         <scene sceneID="SSf-LI-Csd">
@@ -243,59 +172,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="koH-8u-urY" kind="relationship" relationship="rootViewController" id="l5Y-4A-nMn"/>
+                        <segue destination="q2m-nQ-MsA" kind="relationship" relationship="rootViewController" id="YAe-QM-5FN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ThS-Rf-uEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="545" y="805"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="1br-Cs-dmD">
+        <!--Family View-->
+        <scene sceneID="JbX-7u-dhk">
             <objects>
-                <viewController id="hLK-ch-Ng1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5IH-BX-KU5">
+                <viewController id="q2m-nQ-MsA" customClass="familyView" customModule="wankoAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oAG-T7-meh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYU-Pd-ovs">
-                                <rect key="frame" x="124" y="371" width="128" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="Fko-qH-GRZ"/>
-                                    <constraint firstAttribute="width" constant="128" id="xOu-5g-Vyv"/>
-                                </constraints>
-                                <state key="normal" image="写真のフリーアイコン5.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtJ-Je-5OT">
-                                <rect key="frame" x="124" y="168" width="128" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="SN1-Dx-m9a"/>
-                                    <constraint firstAttribute="height" constant="128" id="wdb-oP-MrK"/>
-                                </constraints>
-                                <state key="normal" image="レトロなカメラアイコン2.png"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="XYU-Pd-ovs" firstAttribute="centerX" secondItem="5IH-BX-KU5" secondAttribute="centerX" id="0UF-8K-kJw"/>
-                            <constraint firstItem="N7M-LM-iWF" firstAttribute="trailing" secondItem="XYU-Pd-ovs" secondAttribute="trailing" constant="123" id="8mm-Fq-3H4"/>
-                            <constraint firstItem="XYU-Pd-ovs" firstAttribute="top" secondItem="DtJ-Je-5OT" secondAttribute="bottom" constant="75" id="9JT-Vo-xvw"/>
-                            <constraint firstItem="XYU-Pd-ovs" firstAttribute="leading" secondItem="N7M-LM-iWF" secondAttribute="leading" constant="124" id="9aR-NK-u4U"/>
-                            <constraint firstItem="N7M-LM-iWF" firstAttribute="trailing" secondItem="DtJ-Je-5OT" secondAttribute="trailing" constant="123" id="ELD-Kf-80u"/>
-                            <constraint firstItem="DtJ-Je-5OT" firstAttribute="leading" secondItem="N7M-LM-iWF" secondAttribute="leading" constant="124" id="Rvq-Ef-vre"/>
-                            <constraint firstItem="DtJ-Je-5OT" firstAttribute="centerX" secondItem="5IH-BX-KU5" secondAttribute="centerX" id="TUT-db-ace"/>
-                            <constraint firstItem="N7M-LM-iWF" firstAttribute="bottom" secondItem="XYU-Pd-ovs" secondAttribute="bottom" constant="168" id="XnW-cj-3Lo"/>
-                            <constraint firstItem="XYU-Pd-ovs" firstAttribute="top" secondItem="DtJ-Je-5OT" secondAttribute="bottom" constant="75" id="bM9-XE-149"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="N7M-LM-iWF"/>
+                        <viewLayoutGuide key="safeArea" id="8Wo-nK-ekf"/>
                     </view>
-                    <connections>
-                        <segue destination="koH-8u-urY" kind="show" id="Y1B-5I-Au3"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="dIF-Vb-XgE">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="bookmarks" id="94x-To-S6D"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="camera" id="gi5-CV-WeM"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RbE-pP-631" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wa7-ku-f1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2110" y="805"/>
+            <point key="canvasLocation" x="1278" y="805"/>
         </scene>
     </scenes>
     <resources>
@@ -305,7 +206,6 @@
         <image name="写真のフリーアイコン5.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d16-7h-aoc"/>
-        <segue reference="Y1B-5I-Au3"/>
+        <segue reference="tw3-bO-OE3"/>
     </inferredMetricsTieBreakers>
 </document>

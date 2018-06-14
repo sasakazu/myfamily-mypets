@@ -129,10 +129,10 @@ class petCamera: UIViewController, UIImagePickerControllerDelegate, UINavigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "next" {
             
-            let ViewController:ViewController = segue.destination as! ViewController
+            let petCollection:petCollection = segue.destination as! petCollection
             
     
-            ViewController.sendImage = self.petImage.image
+            petCollection.photoImages = [self.petImage.image]
         }
         
     
