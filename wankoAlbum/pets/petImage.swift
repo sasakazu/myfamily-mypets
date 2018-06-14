@@ -10,7 +10,7 @@ import UIKit
 
 class petImage: UIViewController {
     
-    var petPreviewImage: UIImage?
+    var petSendImage: UIImage = []
     
     @IBOutlet weak var petImageView: UIImageView!
     
